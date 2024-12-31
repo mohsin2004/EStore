@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home" id="home-link">Home</a> |
+      <a href="#products" id="products-link">Products</a> |
+      <a href="#cart" id="cart-link">Cart</a> |
+      <a href="#login" id="login-link">Login</a> |
+      <a href="#signup" id="signup-link">Signup</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <div id="home" class="page">
+      <h1>Welcome to Our Store</h1>
+      <p>Explore our products and shop now!</p>
+    </div>
+
+    <!-- Products Page -->
+    <div id="products" class="page" style="display:none;">
+      <h1>Products</h1>
+      <ul id="product-list"></ul> <!-- Container for product list -->
+    </div>
+
+    <!-- Cart Page -->
+    <div id="cart" class="page" style="display:none;">
+      <h1>Your Cart</h1>
+      <div id="cart-items"></div> <!-- Cart items will be dynamically loaded here -->
+      <button id="checkout-button">Proceed to Checkout</button>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login" class="page" style="display:none;">
+      <h1>Login</h1>
+      <form id="login-form" class="auth-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signup" class="page" style="display:none;">
+      <h1>Signup</h1>
+      <form id="signup-form" class="auth-form">
+        <input type="text" id="signup-username" placeholder="Username" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
